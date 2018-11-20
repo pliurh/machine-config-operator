@@ -91,7 +91,6 @@ func runStartCmd(cmd *cobra.Command, args []string) {
 			daemon.NewFileSystemClient(),
 			startOpts.onceFrom,
 			startOpts.fromIgnition,
-			ctx.KubeInformerFactory.Core().V1().Nodes(),
 			startOpts.kubeletHealthzEnabled,
 			startOpts.kubeletHealthzEndpoint,
 			nodeWriter,
